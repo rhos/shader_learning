@@ -14,7 +14,8 @@ void main() {
 
   //float y = sin(st.x*3.14159265359);
   //float y = 1. - pow(abs(x), .5);
-  float y = pow(cos(PI *x), 0.5);
+  //float y = pow(cos(PI *x), 0.5);
+  float y = step(0.5, st.x);
   // Plot a line
   float pct = plot(st, y);
   vec3 color = (1.0 - pct) * vec3(0.0, 0.0, 0.0) + pct * vec3(0.0, .5, .5);

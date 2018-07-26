@@ -12,8 +12,8 @@ void main() {
 
   // float y = pow(st.x, 5.0);
   // float y = st.x;
-  // float y = smoothstep(0.2,0.5,st.x) - smoothstep(0.5,0.8,st.x);
-  float y = sin(iGlobalTime + st.x*3.14159265359*4.) / 2. + .5;
+   float y = smoothstep(0.2,1.,st.x) ;//- smoothstep(0.5,0.8,st.x);
+  //float y = sin(iGlobalTime + st.x*3.14159265359*4.) / 2. + .5;
 
   vec3 color = vec3(y);
 
