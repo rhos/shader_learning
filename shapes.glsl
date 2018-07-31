@@ -32,7 +32,7 @@ void main() {
     color = mix( influencing_color_A,
                  influencing_color_B,
                  st.y);
-    
+     
     // Foreground rectangle
     vec2 size = vec2(0.1,0.1);
     vec2 offset = vec2(.3,0.);

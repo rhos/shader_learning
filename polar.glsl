@@ -21,5 +21,5 @@ void main(){
     color = vec3(plot(f,r));
     f = abs(cos(a*12.)*sin(a*3.))*.8+.1;
     //color = color - vec3( 1.-smoothstep(f-.01,f+0.01,r) );
-    gl_FragColor = vec4(color, 1.0);
+    gl_FragColor = vec4(color, 1.0); 
 }

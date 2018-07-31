@@ -20,7 +20,7 @@ float dotcircles(in vec2 st, in vec2 center, in float radius)
 void main(){
 	vec2 st = gl_FragCoord.xy/iResolution.xy;
 
-    // a. The DISTANCE from the pixel to the center
+    // a. The DISTANCE from the pixel to the center 
     //pct = distance(st,vec2(0.5));
 
     // b. The LENGTH of the vector

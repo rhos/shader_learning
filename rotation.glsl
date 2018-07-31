@@ -39,5 +39,5 @@ void main(){
     // Add the shape on the foreground
     color += vec3(cross(st,0.4));
 
-    gl_FragColor = vec4(color,1.0);
+    gl_FragColor = vec4(color,1.0); 
 }
