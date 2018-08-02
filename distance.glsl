@@ -10,7 +10,7 @@ void main(){
   // Make the distance field
   vec2 pct = abs(st)-.5;
   d = length( pct );// + iGlobalTime * 0.1;
-  d = length( min(abs(st)-.5,0.) );
+  //d = length( min(abs(st)-.5,0.) );
   //d = length( max(abs(st)-.5,0.) );
 
   // Visualize the distance field
