@@ -21,7 +21,7 @@ float noise (in vec2 st) {
     // Smooth Interpolation
 
     // Cubic Hermine Curve.  Same as SmoothStep()
-    vec2 u = f*f*(3.0-2.0*f);
+    vec2 u = f*f*(3.0-2.0*f); 
     // u = smoothstep(0.,1.,f);
     float l = length(u);
     // Mix 4 coorners percentages

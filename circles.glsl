@@ -12,7 +12,7 @@ float circle(in vec2 st, in vec2 center, in float radius)
 
 float dotcircles(in vec2 st, in vec2 center, in float radius)
 {
-    vec2 dist = st-vec2(0.5);
+    vec2 dist = st-center;
     return smoothstep(radius+(radius*0.1),
                          radius-(radius*0.1),
                          dot(dist,dist)*4.0);
@@ -28,9 +28,10 @@ void main(){
     //vec2 toCenter = vec2(0.5)-st;
     //pct = length(toCenter);
 
-    float c1 = circle(st, vec2(0.4, 0.3), 0.0);
-    float c2 = dotcircles(st, vec2(0.8, 0.5), 0.2);
-    vec3 color = vec3(max(c1,c2), .0, .0);
+    //float c1 = circle(st, vec2(0.5, 0.5), 0.3);
+    float c2 = dotcircles(st, vec2(0.6, 0.8), 0.2);
+    //vec3 color = vec3(max(c1,c2), .0, .0);
+    vec3 color = vec3(c2, .0, .0);
 
 
 	gl_FragColor = vec4( color, 1.0 );
